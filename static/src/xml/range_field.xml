@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="email_validation_widget.RangeField">
+        <div>
+            <label for="range" class="form-label" t-esc="range"></label>
+            <span  t-if='currency' t-esc="currency"/>
+            <input id="range" type="range" class="form-range"
+                   min="100" max="10000" step="100"
+                   t-on-change="(ev) => this.props.record.update({ [this.props.name]: ev.target.value })"
+                    t-att-value="range"/>
+        </div>
+    </t>
+
+</templates>

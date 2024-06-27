@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="email_validation_widget.UsernameField">
+       <div class="input-group d-flex ">
+           <CharField t-props="props"/>@
+           <span class="oe_inline"  t-esc="emailDomain"/>
+       </div>
+    </t>
+</templates>
